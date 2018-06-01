@@ -1,0 +1,83 @@
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid #DBE0E5;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.item:hover {
+    background-color: #F2F4F5;
+}
+
+.colored {
+    color:  #8A96A0;
+}
+
+.blue {
+    color: #73B5E6;
+}
+
+.item .person, .item .company {
+    flex-grow: 1;
+    min-width: 40%;
+    display: flex;
+    align-items: top;    
+}
+
+.item .date {
+    position: absolute;
+    right: 15px;
+    top:15px;
+}
+
+.item .person-img img {
+    border-radius: 50%;    
+}
+
+.item .person .details, .item .company .details {
+    margin-left: 15px;
+}
+
+.item .person .details span, .item .company .details span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.item .person .person-img, .item .copmany .company-img {
+    width: 130px;
+}
+
+.item .company .company-img {
+    max-width: 150px;
+    min-width: 130px;
+    text-align: center;
+}
+
+.item .company .company-img img {
+    max-width: 100%;
+}
+
+.item .person .details, .item .company .details {
+    width: 150px;
+}
+
+.item .company .industries {
+    word-wrap: break-word;
+    max-width: 210px;
+}
+
+
+@media only screen and (max-width: 780px) {
+    .item .person .details {
+        margin-top: 25px;
+    }
+
+    .item .person {
+        margin-bottom: 15px;
+    }
+
+    .item .person .details, .item .company .details {
+        min-width: 170px;
+    }
+}

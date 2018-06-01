@@ -1,0 +1,27 @@
+<div class="item" *ngFor="let person of persons">
+  <div class="person">
+    <div class="person-img">
+        <img class="person-img" [src]="person.profileImageURL" alt="">        
+    </div>
+    <div class="details">
+      <span>{{person.name}}</span>
+      <span class="colored">{{person.title}}</span>
+    </div>
+  </div>
+
+  <div class="company">
+    <div class="company-img">
+        <img [src]="person.companyLogo" alt="">        
+    </div>
+    <div class="details">
+      <span class="blue">{{person.companyName}}</span>
+      <div class="industries">
+        <span>{{person.industry}}</span>
+      </div>
+      <span class="colored">{{person.companyEmployees}} Employees</span>
+    </div>
+    <div class="date colored">
+      <span>{{person.lastUpdatedDate}}</span>
+    </div>
+  </div>
+</div>
