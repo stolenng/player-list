@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import Person from '../models/Person';
-import IPerson from '../interfaces/IPerson';
 
 @Injectable()
 export class PersonService {
